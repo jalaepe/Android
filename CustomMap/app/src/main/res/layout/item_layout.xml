@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/CardView.Light"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:clickable="true"
-    android:foreground="?android:attr/selectableItemBackground"
-    android:padding="8dp">
     <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <LinearLayout
@@ -84,5 +75,3 @@
             android:textColor="#801A01"/>
     </LinearLayout>
     </RelativeLayout>
-
-</androidx.cardview.widget.CardView>
