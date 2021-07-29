@@ -106,6 +106,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         .icon(BitmapDescriptorFactory.defaultMarker(
                                 BitmapDescriptorFactory.HUE_GREEN));
                 mMap.addMarker(marker);
+                ClipboardManager clipboardManager = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clipData = ClipData.newPlainText("location","Latitude : "+p1.latitude+"\nLongitude : "+p1.longitude);
+                clipboardManager.setPrimaryClip(clipData);
+                Toast.makeText(MainActivity.this,clipData+"\nhas been copied.",Toast.LENGTH_LONG).show();
                 dialogBox("If you want to add your new location, please contact to ADMIN"+"\n\n"+"Your New Location is "+"\n\n"+
                         "Latitude :"+p1.latitude+"\n"+"Longitude :"+p1.longitude);
             }
